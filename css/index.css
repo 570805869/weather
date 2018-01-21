@@ -3,6 +3,7 @@
 }
 body{
     font-size: 12px;
+	background-color: #e8e8e8;
 }
 header{
 	width: 100%;
@@ -25,14 +26,15 @@ header{
 	font-family: iconfont;
 }
 .now_city_box{
-	font-size: 0.39rem;
+	padding-top: 10px;
+	font-size: 1rem;
 	color: #fff;
 	text-align: center;
 	line-height:1.6rem;
 }
 .now_air_box{
-	width: 2.1rem;
-	height: 1.26rem;
+	width: 3rem;
+	height: 2.6rem;
 	background-color:#f1ab62;
 	border-radius: .2rem;
 	margin-left: 27px;
@@ -50,20 +52,20 @@ header{
 	color: white;
 	text-align: center;
 	font-weight: 400;
-	margin-top: .52rem;
+	margin-top: .20rem;
 	height: 1.29rem;
 	padding-left: .5rem;
 }
 
 .now_weather{
-	font-size: .58rem;
+	font-size: 1rem;
 	color: white;
 	text-align: center;
 	font-weight: 400;
 	margin-top: .20rem;
 }
 .now_wet{
-	font-size: .36rem;
+	font-size: .6rem;
 	color: white;
 	text-align: center;
 	font-weight: 400;
@@ -80,7 +82,8 @@ header{
 .next{
 	width:100%;
 	height: 2.94rem;
-	border-bottom: .03rem  solid #e4e4e4;
+	/*border-bottom: .3rem  solid #e4e4e4;*/
+	/*margin-bottom: 1rem;*/
 	padding: .72rem 0;
     overflow: hidden;
     background-color: white;
@@ -106,20 +109,19 @@ header{
 }
 
 .today_img,.tomorrow_img{
-	width:.78rem;
-	height: .78rem;
+	width: 2rem;
+	height: 2rem;
 }
 .next_bottom{
-	margin-top: .36rem;
+	margin-top: .5rem;
 }
 .hours{
 	width: 100%;
 	height: 3.94rem;
 	margin-top: .27rem;
-	border-top: .27rem solid #e4e4e4;
-	border-bottom:.03rem solid #e4e4e4;
 	overflow: hidden;
-	padding:.88rem 0; 
+	padding:.88rem 0;
+	background-color: white;
 }
 .hours_content{
     height: 100%;
@@ -131,54 +133,54 @@ header{
 .hours_content li{
 	width: 2rem;
 	height: 100%;
-	padding: 0 0.5rem;
+	padding: 0 0.6rem;
 	display: flex;
 	flex-wrap:wrap;
 	align-content: space-between;
 	justify-content: center;
-
 }
 
 .hours_img{
-	width:.58rem;
-	height: .58rem;
+	width: 2rem;
+    height: 2rem;
 }
 
 .future{
 	width: 100%;
-	height: 7.5rem;
 	margin-top: .27rem;
 	border-top: .03rem solid #e4e4e4;
 	border-bottom:.03rem solid #e4e4e4;
 	overflow: hidden;
 	padding:.88rem 0;
 	font-weight: 400;
+	background-color: white;
 }
 
 .future_content{
     height: 100%;
-    background-color: white;
     display: flex;
     overflow-x: auto;
+	padding-left: 10px;
  }
 
  .future_temp {
-	width: 3rem;
+	width: 60px;
 	height: 100%;
 	display: flex;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 	align-content: space-between;
 	justify-content: center;
 	flex-shrink: 0;
+}
+ .future_temp div{
+     width: 60px;
+     text-align: center;
+     margin-bottom: 10px;
+ }
 
-}
-.future_content span{
-	width: 2rem;
-	text-align: center;
-	display: block;
-}
 .future_img{
-	width:1rem;
+	display: block;
+	width:5rem;
 	height: 1rem;
 }
 .future_num_max,.future_num_min,.future_wind_num,.future_date{
@@ -190,7 +192,7 @@ header{
 
 
 .citys{
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	background-color: #f6f6f6;
 	position: fixed;
@@ -201,17 +203,18 @@ header{
 
 .search_box{
 	width: 100%;
-	height: 1.28rem;
+	height: 3rem;
 	background-color: white;
-	padding: 0 .3rem;
+	padding: 0 .4rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+    margin: 10px 5px;
 }
 .search{
-	width: 9rem;
-	height: .87rem;
+	width: 80%;
+	height: 2rem;
 	background-color: #e2e2e2;
 	border: 0;
 	padding-left: 0.3rem;
@@ -225,31 +228,30 @@ header{
 .citys_box{
 	width: 100%;
 	height: 90vh;
-	
 	overflow-y: auto;
 	padding: 0 0.3rem;
 }
 
 .citys_title{
-	font-size: .5rem;
+	font-size: 12px;
 	color: #999;
 	line-height: .87rem;
 }
 
-.citys_list li{
-	width: 2.93rem;
-	height: .84rem;
-	list-style-type: none;
-	
-	font-size: .44rem;
-	text-align: center;
-	line-height: .84rem;
-	border: .03rem solid #e0e0e0;
-	border-radius: .1rem;
-	float: left;
-	margin-right: .4rem;
-	margin-bottom: .4rem; 
-}
+/*.citys_list li{*/
+	/*width: 2.93rem;*/
+	/*height: .84rem;*/
+	/*list-style-type: none;*/
+
+	/*font-size: .44rem;*/
+	/*text-align: center;*/
+	/*line-height: .44rem;*/
+	/*border: .03rem solid #e0e0e0;*/
+	/*border-radius: .1rem;*/
+	/*float: left;*/
+	/*margin-right: .4rem;*/
+	/*margin-bottom: .4rem;*/
+/*}*/
 ::-webkit-scrollbar{
 	height: 0;
 }
@@ -259,21 +261,26 @@ header{
 }
 
 .citys_listt{
-	width: 2.93rem;
-	height: .84rem;
-	font-size: .44rem;
+	width: 6rem;
+	height: 1.5rem;
+	font-size: 14px;
 	text-align: center;
-	line-height: .84rem;
+	line-height: 1.5rem;
 	border: .03rem solid #e0e0e0;
 	border-radius: .1rem;
 	float: left;
 	margin-right: .4rem;
 	margin-bottom: .4rem;
     list-style-type: none;
+    background-color: #fff;
 }
+
 
 .citys_tile{
 	font-size: .5rem;
 	color: #999;
 	line-height: .87rem;
+}
+.citysss li{
+    width: 70px;
 }
